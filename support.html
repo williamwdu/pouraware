@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Support | PourAware</title>
+  <meta
+    name="description"
+    content="Support and important information for the PourAware iOS and iPadOS application."
+  >
 
   <style>
     :root {
@@ -35,9 +40,15 @@
       margin: 0;
       background: var(--background);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-        Arial, sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
       line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
     }
 
     main {
@@ -54,13 +65,27 @@
     }
 
     h1 {
-      margin: 0 0 8px;
+      margin: 0 0 24px;
       font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 10px;
+      font-size: 21px;
+      letter-spacing: -0.01em;
     }
 
     .app-name {
       color: var(--secondary);
       font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin: 0 0 16px;
     }
 
     a {
@@ -72,12 +97,38 @@
       text-decoration: underline;
     }
 
+    .disclaimer {
+      margin-top: 16px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .disclaimer p:last-child {
+      margin-bottom: 0;
+    }
+
     footer {
       margin-top: 40px;
       padding-top: 24px;
       border-top: 1px solid var(--border);
       color: var(--secondary);
       font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 24px 16px;
+      }
+
+      .card {
+        padding: 30px 24px;
+        border-radius: 16px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
@@ -94,13 +145,36 @@
       </p>
 
       <p>
-        Contact us at:
+        Contact:
         <a href="mailto:pouraware@gmail.com">pouraware@gmail.com</a>
       </p>
 
       <p>
         When reporting an issue, it may help to include your device model,
         iOS or iPadOS version, and a brief description of what happened.
+      </p>
+
+      <h2>Important BAC Information</h2>
+
+      <div class="disclaimer">
+        <p>
+          PourAware provides estimated blood alcohol concentration (BAC) and
+          related information for personal awareness and informational
+          purposes only.
+        </p>
+
+        <p>
+          Estimates may not reflect your actual blood alcohol concentration
+          and should never be used to determine whether it is safe or legal
+          to drive or operate a vehicle.
+        </p>
+      </div>
+
+      <h2>Privacy</h2>
+
+      <p>
+        You can read the
+        <a href="./">PourAware Privacy Policy</a>.
       </p>
 
       <footer>
